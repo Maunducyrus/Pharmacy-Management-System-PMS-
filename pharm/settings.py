@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'pharmacy',
     'crispy_forms',
     'phonenumber_field',
+    # 'crispy_bootstrap4',
 
  
 ]

@@ -1,5 +1,6 @@
 <form role="form" method="POST" action="{{ action_path }}" enctype="multipart/form-data">
-    {% csrf_token %} {% if messages %}
+    {% csrf_token %} 
+    {% if messages %}
     <div class="form-group">
         <div class="col-12">
             {% for message in messages %} {% if message.tags == "error" %}

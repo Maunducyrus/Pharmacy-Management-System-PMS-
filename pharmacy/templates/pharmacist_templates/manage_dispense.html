@@ -1,56 +1,56 @@
         {% extends 'pharmacist_templates/base_template.html'%}
-        {% load crispy_forms_tags %}
+{% load crispy_forms_filters %}
+{% load crispy_forms_tags %}
 
         {% block page_title %}
         <h5>Add patient</h5>
 
         {% endblock page_title %}
-        {% block main_content %}
-        <style>
+{% block main_content %}
+            <style>
             #div_id_patient_id{
                 display: none !important;
             }
             .select2-container--default .select2-results__option[aria-disabled='true'] {
             color: #0071d4 !important;
-        ;
-        }
-        .select2-container--default.select2-container--focus .select2-selection--single, .select2-container--default.select2-container--focus .select2-selection--multiple {
+            }
+         .select2-container--default.select2-container--focus .select2-selection--single, .select2-container--default.select2-container--focus .select2-selection--multiple {
             border-color: #bbbfc4;
-        }
-        .select2-container input {
-        -webkit-transition: all 0.10s ease-in-out !important;
-        -moz-transition: all 0.10s ease-in-out !important;
-        -ms-transition: all 0.10s ease-in-out !important;
-        -o-transition: all 0.10s ease-in-out !important;
-        outline: none !important;
-        padding: 3px 0px 3px 3px!important;
-        margin: 5px 1px 3px 0px !important;
-        border: 1px solid #DDDDDD!important;
-        }
+         }
+         .select2-container input {
+         -webkit-transition: all 0.10s ease-in-out !important;
+         -moz-transition: all 0.10s ease-in-out !important;
+             -ms-transition: all 0.10s ease-in-out !important;
+            -o-transition: all 0.10s ease-in-out !important;
+            outline: none !important;
+            padding: 3px 0px 3px 3px!important;
+            margin: 5px 1px 3px 0px !important;
+            border: 1px solid #DDDDDD!important;
+            }
         
-        .select2-container input:focus {
-        box-shadow: 0 0 5px rgba(81, 203, 238, 1)  !important;
-        padding: 3px 0px 3px 3px !important;
-        margin: 5px 1px 3px 0px !important;
-        border: 1px solid rgb(85, 148, 165)!important;
-        }
+            .select2-container input:focus {
+            box-shadow: 0 0 5px rgba(81, 203, 238, 1)  !important;
+            padding: 3px 0px 3px 3px !important;
+            margin: 5px 1px 3px 0px !important;
+            border: 1px solid rgb(85, 148, 165)!important;
+            }
 
 
 
-        .select2-container--default .select2-dropdown .select2-search__field, .select2-container--default .select2-search--inline .select2-search__field {
+            .select2-container--default .select2-dropdown .select2-search__field, .select2-container--default .select2-search--inline .select2-search__field {
             border: 1px solid #ced4da !important;
         
 
-        }
-        .select2-container--default .select2-selection--single {
+            }
+            .select2-container--default .select2-selection--single {
             background-color: #fff;
             border: 1px solid #aaa;
             border-radius: 4px;
             height: 45px;
-        }
+            }
 
-        </style>
-        <section class="content">
+            </style>
+            <section class="content">
                 <div class="container-fluid">
                     {% include 'pharmacist_templates/alert_messeges.html' %}
                     <h5 class="mt-4 ml-2">         
@@ -191,7 +191,7 @@
                                     
                                         <div class="card-body">
                                         
-                                    {{form|crispy}}
+                                    {{form | crispy}}
                                 
                                         </div>
                                     
@@ -199,12 +199,8 @@
                                         <input type="button" class="btn btn-info ml-4 mb-4" data-toggle="modal" data-target=".bd-example-modal-sm" value="Submit"> 
                                         </div>
                                         {% include 'pharmacist_templates/insert_modal.html'%}
-
                                     </form>
-
                             </div>
-                            
                         </div>
-            
                     </div>
-        {% endblock %}
+    {% endblock %}        
