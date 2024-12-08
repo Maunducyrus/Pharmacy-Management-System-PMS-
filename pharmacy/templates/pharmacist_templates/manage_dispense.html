@@ -17,9 +17,9 @@
          .select2-container--default.select2-container--focus .select2-selection--single, .select2-container--default.select2-container--focus .select2-selection--multiple {
             border-color: #bbbfc4;
          }
-         .select2-container input {
-         -webkit-transition: all 0.10s ease-in-out !important;
-         -moz-transition: all 0.10s ease-in-out !important;
+             .select2-container input {
+             -webkit-transition: all 0.10s ease-in-out !important;
+            -moz-transition: all 0.10s ease-in-out !important;
              -ms-transition: all 0.10s ease-in-out !important;
             -o-transition: all 0.10s ease-in-out !important;
             outline: none !important;
@@ -50,6 +50,7 @@
             }
 
             </style>
+    
             <section class="content">
                 <div class="container-fluid">
                     {% include 'pharmacist_templates/alert_messeges.html' %}
@@ -108,25 +109,14 @@
 
                                 {% endif %}
                             <!-- End Expire -->
-
-                                                
                                                 </tr>
                                                 {% endfor %}
 
                                             </tbody>
                                 
-                                                </table>
+                                            </table>
                                     </div>
-                                    
-                                
                                 </div>
-                                
-                
-
-
-                            
-                                
-                        
                             
                         <div class="col-md-6">
                             <div class="card card-info">
@@ -152,28 +142,20 @@
                                     </thead>
                                     {% for stoc in prescrips %}
 
-                                        <tbody  >
+                                        <tbody >
                                         <tr class="hov" >
                                             <td>{{forloop.counter}} &#160;</td>
-                                        
                                             <td>{{stoc.prescribe}}</td>
                                             <td>{{stoc.description}}</td>
-                    
-                                        
-                                        
                                         </tr>
-                                    </tbody>
-                                    {% endfor %}
+                                        </tbody>
+                                        {% endfor %}
 
                                         </table>
-                            </div>
-                            
+                                    </div>
 
-                    </div>
-                            
-
+{#                                </div>#}
                                 <!-- /.card -->
-            
                             </div>
                         </div>
 
@@ -184,14 +166,12 @@
                                 </div>
 
                                     <form role="form" method="POST" action="" enctype="multipart/form-data">
-                                        {% csrf_token %}
-                                    
                                         
-                                                
-                                    
+                                        {% csrf_token %}
+                                        
                                         <div class="card-body">
                                         
-                                    {{form | crispy}}
+                                        {{form | crispy}}
                                 
                                         </div>
                                     
@@ -203,4 +183,5 @@
                             </div>
                         </div>
                     </div>
+                </div>
     {% endblock %}        

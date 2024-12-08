@@ -1,8 +1,13 @@
 {% extends 'clerk_templates/base_template.html'%} 
+{% load crispy_forms_filters %} 
+
 {% load crispy_forms_tags %} 
+
 {% block page_title %}
+    
 <h5>Add patient</h5>
-{% endblock page_title %} {% block main_content %}
+{% endblock page_title %} 
+{% block main_content %}
 <section class="content" style="">
     <div class="container-fluid">
         <div class="row mt-3">
