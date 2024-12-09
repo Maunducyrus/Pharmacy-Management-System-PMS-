@@ -47,10 +47,13 @@
         <!-- /.navbar -->
 
         <!-- Main Sidebar Container -->
-        {% include 'patient_templates/sidebar.html'%}
+        <div class="d-flex w-100">
+                    {% include 'patient_templates/sidebar.html'%}
 
+        </div>
         <!-- Content Wrapper. Contains page content -->
-        <div class="content-wrapper">
+        <div class="w-100">
+                    <div class="content-wrapper">
             <div class="content-header">
 
                 <div class="container-fluid">
@@ -74,6 +77,8 @@
             </div>
             <!-- Main content -->
             {% block main_content %} {% endblock main_content %}
+
+        </div>
 
         </div>
         {% include 'hod_templates/footer.html'%}
