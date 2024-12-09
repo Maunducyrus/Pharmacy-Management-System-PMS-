@@ -8,123 +8,125 @@
 {% load static %}
 <head>
     <title>Login</title>
-{#	<style>#}
-{#		.auth-box {#}
-{#  background: rgba(255, 255, 255, 0.98);#}
-{#}#}
-{#		body {#}
-{#			margin: 0;#}
-{#			padding: 0;#}
-{#			background:url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7_3c7yrPY5gWKW8R50KETpRXUNH7BdCyxwFsAMEFBrzI_pe-cb-D-qJ_MFwDL8hdQ0B8&usqp=CAU);#}
-{#			/* background:rgb(255, 255, 255); */#}
-{#			/* url(https://cdn.wallpapersafari.com/70/37/zQbXdt.jpg) */#}
-{#			background-position: center;#}
-{#			background-repeat: no-repeat;#}
-{#			background-attachment: scroll;#}
-{#			background-size: cover;#}
-{#		}#}
-{#		.input-group{#}
-{#			width: 450px !important;#}
-{#		}#}
-{#	input[type="text"],#}
-{#input[type="password"] {#}
-    {#border: 0;#}
-{#    background: none;#}
-{#    border: 1px solid #3498db;#}
-{#	padding: 10px 10px;#}
-{#	border-left: none !important;#}
-{#	width: 100px !important;#}
-{#	height: 45px;#}
-{#    outline: none !important;#}
-{#    color: #000000 !important;#}
-{#    border-radius: 24px;#}
-{#	transition: 0.25s;#}
-{#}#}
-{#span{#}
-{#	border: 1px solid #3498db !important;#}
-{#	border-right: none !important;#}
-{#	border-top-left-radius: 24px !important;#}
-{#	border-bottom-left-radius: 24px !important;#}
-{#	background: #86caf8 !important;#}
-{#	width: 50px !important;#}
-{#}#}
-{#i{#}
-{#	color: rgb(53, 53, 53);#}
-{#	margin-left: 7px;#}
-{#}	#}
-{#       .loop{#}
-{#		   margin-top: 50px !important;#}
-{#	   }#}
-{#	   .profile-header2,.br-n {#}
-{#  height: 10.75rem !important;#}
-{#  background: url(https://jobs.newscientist.com/getasset/0f3de168-cdc2-410a-be98-ff892b0f6dab/) !important;#}
-{#  /* background:linear-gradient(to right,#44368a ,#445a80)!important; */#}
-{#  /* background: linear-gradient(to right,#641eff 0,#a307dd 100%); */#}
-{#  /* background: linear-gradient(40deg, #2096ff, #05ffa3) !important; */#}
-{#  background-repeat: no-repeat !important;#}
-{#  background-size: cover !important;#}
-{##}
-{#background-position: center;#}
-{# color: white !important;#}
-{##}
-{#}#}
-{#.profile-header2::after{#}
-{#  position: absolute;#}
-{#  content:'';#}
-{#  height:560px;#}
-{#  background: rgba(26, 27, 61, 0.9) !important;#}
-{#  top:0;#}
-{#  left:0;#}
-{#  width:97.5%;#}
-{#  z-index: 10;#}
-{#}#}
-{#.col-md-6{#}
-{#	z-index: 87;#}
-{#}#}
-{#.profile-header2 p{#}
-{#}#}
-{# button[type="submit"] {#}
-    {#border: 0;#}
-{#    background: none;#}
-{#    display: block;#}
-{#    margin: 20px auto;#}
-{#    text-align: center;#}
-{#    border: 2px solid #2ecc71;#}
-{#    padding: 14px 40px;#}
-{#    outline: none;#}
-{#    color: white;#}
-{#    border-radius: 24px;#}
-{#    transition: 0.25s;#}
-{#	cursor: pointer;#}
-{#    background: #4db2f5 !important;#}
-{##}
-{#}#}
-{#button[type="submit"]:hover {#}
-{#	background: #86caf8 !important;#}
-{#}#}
-{##}
-{#.input-group:focus{#}
-{#	width: 590px !important;#}
-{#	border-color: #ffffff;#}
-{#	outline:none !important;#}
-{#}#}
-{#.major{#}
-{#}#}
-{#.mayooh{#}
-{#	border:2px solid white !important;#}
-{#}#}
-{#.card{#}
-{#	display: flex !important;#}
-{#	flex-direction: column !important;#}
-{#	justify-content: center !important;#}
-{#	align-items: center !important;#}
-{#	border-radius: 10px !important;#}
-{#	background: rgb(255, 255, 255,.8) !important;#}
-{#}#}
-{#.text-muted,.text-secondary{#}
-{#	color: rgb(63, 63, 63) !important;#}
-{#}#}
-{#	</style>#}
+	<style>
+		.auth-box {
+  background: rgba(255, 255, 255, 0.98);
+}
+		body {
+			margin: 0;
+			padding: 0;
+			background:url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7_3c7yrPY5gWKW8R50KETpRXUNH7BdCyxwFsAMEFBrzI_pe-cb-D-qJ_MFwDL8hdQ0B8&usqp=CAU);
+			/* background:rgb(255, 255, 255); */
+			/* url(https://cdn.wallpapersafari.com/70/37/zQbXdt.jpg) */
+			background-position: center;
+			background-repeat: no-repeat;
+			background-attachment: scroll;
+			background-size: cover;
+		}
+		.input-group{
+			width: 450px !important;
+		}
+	input[type="text"],
+input[type="password"] {
+    border: 0;
+    background: none;
+    border: 1px solid #3498db;
+	padding: 10px 10px;
+	border-left: none !important;
+	width: 100px !important;
+	height: 45px;
+    outline: none !important;
+    color: #000000 !important;
+    border-radius: 24px;
+	transition: 0.25s;
+}
+span{
+	border: 1px solid #3498db !important;
+	border-right: none !important;
+	border-top-left-radius: 24px !important;
+	border-bottom-left-radius: 24px !important;
+	background: #86caf8 !important;
+	width: 50px !important;
+}
+i{
+	color: rgb(53, 53, 53);
+	margin-left: 7px;
+}	
+       .loop{
+		   margin-top: 50px !important;
+	   }
+	   .profile-header2,.br-n {
+  height: 10.75rem !important;
+  background: url(https://jobs.newscientist.com/getasset/0f3de168-cdc2-410a-be98-ff892b0f6dab/) !important;
+  /* background:linear-gradient(to right,#44368a ,#445a80)!important; */
+  /* background: linear-gradient(to right,#641eff 0,#a307dd 100%); */
+  /* background: linear-gradient(40deg, #2096ff, #05ffa3) !important; */
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+
+background-position: center;
+ color: white !important;
+
+}
+.profile-header2::after{
+  position: absolute;
+  content:'';
+  height:560px;
+  background: rgba(26, 27, 61, 0.9) !important;
+  top:0;
+  left:0;
+  width:97.5%;
+  z-index: 10;
+}
+.col-md-6{
+	z-index: 87;
+}
+.profile-header2 p{
+}
+ button[type="submit"] {
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #2ecc71;
+    padding: 14px 40px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s;
+	cursor: pointer;
+    background: #4db2f5 !important;
+
+}
+button[type="submit"]:hover {
+	background: #86caf8 !important;
+}
+
+.input-group:focus{
+	width: 590px !important;
+	border-color: #ffffff;
+	outline:none !important;
+}
+.major{
+}
+.mayooh{
+	border:2px solid white !important;
+}
+.card{
+	display: flex !important;
+	flex-direction: column !important;
+	justify-content: center !important;
+	align-items: center !important;
+	border-radius: 10px !important;
+	background: rgb(255, 255, 255,.8) !important;
+}
+.text-muted,.text-secondary{
+	color: rgb(63, 63, 63) !important;
+}
+	</style>
+
+
 </head>
 <body>
 	 <div class="more p mt-3">
